@@ -5,29 +5,16 @@ import java.io.PrintWriter;
 import java.util.*;
 
 /**
- * @author RECEP TAYYIP ERDOGAN
+ * @author TAYOGAN
  * @since 7.01.2021
  */
-public class NgramExtractor {
-    public static void main(String[] args) throws FileNotFoundException {
-
-        //int value = Integer.parseInt(args[2]);
-
-        loadPaths("WriteInputPathHere",
-                "WriteOutputPathHere"
-                , 1);
     }
     public static void loadPaths(String path, String outputPath,
                                         int value) throws FileNotFoundException {
 
         HashMap<String, Integer> map = new HashMap<>();
 
-        ArrayList<String> token = new ArrayList<>();
-
-        StringBuilder text = new StringBuilder();
-
-        Scanner scanner = new Scanner(new File(path));
-
+   
         while (scanner.hasNextLine()) {
 
             text.append(scanner.nextLine() + "");
