@@ -1,9 +1,6 @@
 What is th n-gram?
 Here is the link to understand the n-gram: https://en.wikipedia.org/wiki/N-gram
 
-What is doing this program?
-A program that extracts uni-gram features of the text document. 
-N-gram is a contiguous sequence of n words from a given sample of text or speech.
 
 * if you use input.txt file(You can use any text document whatever you want) in repo the output 
   will be output.csv file(Will be changed according to your input.txt file).
@@ -12,6 +9,7 @@ N-gram is a contiguous sequence of n words from a given sample of text or speech
 #EXAMPLE
 
 ##If the input.txt file contains the following text:
+
 What is th n-gram? Here is the link to understand the n-gram: https://en.wikipedia.org/wiki/N-gram
 
 What is doing this program? A program that extracts uni-gram features of the text document. N-gram is a contiguous sequence of n words from a given sample of text or speech.
@@ -20,6 +18,7 @@ if you use input.txt file(You can use any text document whatever you want) in re
 input.txt
 
 ##output.csv file will be:
+
 Total number of tokens: 112
 ngram,count,frequency
 the,9,8.035714285714286
