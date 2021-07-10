@@ -1,20 +1,16 @@
-### Features
-* What is the n-gram? Here is the link to understand the n-gram: https://en.wikipedia.org/wiki/N-gram
-
-
-* if you use input.txt file(You can use any text document whatever you want) in repo the output will be output.csv file(Will be changed according to your input.txt file). This program will extract the uni-gram of the text and you can see the analysis of the text in the output.csv file.
-#EXAMPLE
-
-##If the input.txt file contains the following text:
-
+Features
+What is the n-gram? Here is the link to understand the n-gram: https://en.wikipedia.org/wiki/N-gram
+if you use input.txt file(You can use any text document whatever you want) in repo the output will be output.csv file(Will be changed according to your input.txt file). This program will extract the uni-gram of the text and you can see the analysis of the text in the output.csv file.
+EXAMPLE
+If the input.txt file contains the following text:
 What is th n-gram? Here is the link to understand the n-gram: https://en.wikipedia.org/wiki/N-gram
 
 What is doing this program? A program that extracts uni-gram features of the text document. N-gram is a contiguous sequence of n words from a given sample of text or speech.
 
 if you use input.txt file(You can use any text document whatever you want) in repo the output will be output.csv file(Will be changed according to your input.txt file). This program will extract the uni-gram of the text and you can see the analysis of the text in the output.csv file.
 
-##output.csv file will be:
-> "Total number of tokens: 112
+output.csv file will be:
+“Total number of tokens: 112
 ngram,count,frequency
 the,9,8.035714285714286
 of,5,4.464285714285714
@@ -73,5 +69,4 @@ from,1,0.8928571428571428
 and,1,0.8928571428571428
 sequence,1,0.8928571428571428
 any,1,0.8928571428571428
-see,1,0.8928571428571428"
-
+see,1,0.8928571428571428”
