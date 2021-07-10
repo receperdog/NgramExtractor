@@ -24,7 +24,7 @@ public class NgramExtractor {
 
         StringBuilder text = new StringBuilder();
 
-        Scanner scanner = new Scanner(new File(path));
+        Scanner scanner = new Scanner(new File(inputPath));
 
         while (scanner.hasNextLine()) {
 
