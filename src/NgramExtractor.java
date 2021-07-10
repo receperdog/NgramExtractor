@@ -15,7 +15,7 @@ public class NgramExtractor {
                 "C:\\Users\\erdog\\IdeaProjects\\NgramExtractor\\src\\output.csv"
                 , 1);
     }
-    public static void loadPaths(String path, String outputPath,
+    public static void loadPaths(String inputPath, String outputPath,
                                         int value) throws FileNotFoundException {
 
         HashMap<String, Integer> map = new HashMap<>();
