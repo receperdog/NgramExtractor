@@ -11,10 +11,8 @@ import java.util.*;
 public class NgramExtractor {
     public static void main(String[] args) throws FileNotFoundException {
 
-        //int value = Integer.parseInt(args[2]);
-
-        loadPaths("WriteInputPathHere",
-                "WriteOutputPathHere"
+        loadPaths("C:\\Users\\erdog\\IdeaProjects\\NgramExtractor\\src\\input.txt",
+                "C:\\Users\\erdog\\IdeaProjects\\NgramExtractor\\src\\output.csv"
                 , 1);
     }
     public static void loadPaths(String path, String outputPath,
@@ -34,7 +32,6 @@ public class NgramExtractor {
 
         }
         scanner.close();
-        //System.out.println(text);
 
         text = new StringBuilder(text.toString().toLowerCase());
 
@@ -76,18 +73,10 @@ public class NgramExtractor {
         }
 
 
-
-
-
-        //map.forEach((key,val) -> System.out.println(key+ ":" + val));
-        //System.out.println("------");
-
         LinkedHashMap<String, Integer> descSortedMap = new LinkedHashMap<>();
         map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .forEachOrdered(x -> descSortedMap.put(x.getKey(), x.getValue()));
 
-        //descSortedMap.forEach((key,val) -> System.out.println(key+ ":" +
-        // val));
 
         ArrayList<String> nGram = new ArrayList<>(descSortedMap.keySet());
         ArrayList<Integer> valueOfMap = new ArrayList<>(descSortedMap.values());
